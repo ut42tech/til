@@ -1,11 +1,11 @@
 const meta = {
   index: {
     type: "page",
-    title: "Home",
+    title: "ホーム",
   },
   docs: {
     type: "page",
-    title: "Documentation",
+    title: "ドキュメント",
   },
 };
 

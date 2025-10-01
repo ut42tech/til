@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Today I Learned by ut42tech",
 };
 
-const footer = <Footer>{new Date().getFullYear()} © ut42tech</Footer>;
+const footer = <Footer>{new Date().getFullYear()} © Takuya Uehara</Footer>;
 
 export default async function RootLayout({
   children,
@@ -25,12 +25,17 @@ export default async function RootLayout({
         <Layout
           navbar={
             <Navbar
-              logo={<h1 className="text-2xl"> TIL by ut42tech</h1>}
+              logo={
+                <div className="flex flex-col">
+                  <h1 className="text-xl">TIL</h1>
+                  <p className="text-sm">by ut42tech</p>
+                </div>
+              }
               projectLink="https://github.com/ut42tech/til"
             />
           }
           pageMap={await getPageMap()}
-          docsRepositoryBase="https://github.com/ut42tech/til/tree/main/docs"
+          docsRepositoryBase="https://github.com/ut42tech/til/tree/main"
           sidebar={{ defaultMenuCollapseLevel: 1, autoCollapse: true }}
           footer={footer}
         >

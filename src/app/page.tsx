@@ -1,9 +1,3 @@
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Home - TIL by ut42tech",
-  description: "Today I Learned by ut42tech",
-};
 export default function Home() {
   return (
     <div className="container flex items-center justify-center">
