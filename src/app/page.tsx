@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nextra 4",
-  description: "Nextra 4 is here.",
+  title: "Home - TIL by ut42tech",
+  description: "Today I Learned by ut42tech",
 };
 export default function Home() {
   return (

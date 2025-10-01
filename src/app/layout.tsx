@@ -7,12 +7,11 @@ import "nextra-theme-docs/style.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nextra 4",
-  description: "Nextra 4 is here.",
+  title: "TIL by ut42tech",
+  description: "Today I Learned by ut42tech",
 };
 
-const banner = <Banner storageKey="some-key">Nextra 4.0 is released 🎉</Banner>;
-const footer = <Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>;
+const footer = <Footer>{new Date().getFullYear()} © ut42tech</Footer>;
 
 export default async function RootLayout({
   children,
@@ -20,19 +19,18 @@ export default async function RootLayout({
   children: ReactNode;
 }) {
   return (
-    <html lang="en" dir="ltr" suppressHydrationWarning>
+    <html lang="ja" dir="ltr" suppressHydrationWarning>
       <Head />
       <body>
         <Layout
-          banner={banner}
           navbar={
             <Navbar
-              logo={<h1 className="text-2xl"> Nextra</h1>}
-              projectLink="https://github.com/officialrajdeepsingh/nextra-4"
+              logo={<h1 className="text-2xl"> TIL by ut42tech</h1>}
+              projectLink="https://github.com/ut42tech/til"
             />
           }
           pageMap={await getPageMap()}
-          docsRepositoryBase="https://github.com/officialrajdeepsingh/nextra-4/tree/main/docs"
+          docsRepositoryBase="https://github.com/ut42tech/til/tree/main/docs"
           editLink="Edit this page on GitHub"
           sidebar={{ defaultMenuCollapseLevel: 1, autoCollapse: true }}
           footer={footer}
