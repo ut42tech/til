@@ -26,9 +26,9 @@ export default async function RootLayout({
           navbar={
             <Navbar
               logo={
-                <div className="flex flex-col">
-                  <h1 className="text-xl">TIL</h1>
-                  <p className="text-sm">by ut42tech</p>
+                <div className="flex gap-2 items-center">
+                  <h1 className="text-xl font-bold">TIL</h1>｜
+                  <p className="text-sm font-mono">ut42tech</p>
                 </div>
               }
               projectLink="https://github.com/ut42tech/til"
